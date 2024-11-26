@@ -10,7 +10,16 @@ export const blogsApiSlice = apiSlice.injectEndpoints({
         };
       },
     }),
+
+    getSingleBlog: builder.query({
+      query: (id) => {
+        return {
+          url: `blogs/${id}?populate=*`,
+          method: "GET",
+        };
+      },
+    }),
   }),
 });
 
-export const { useGetBlogsQuery } = blogsApiSlice;
+export const { useGetBlogsQuery, useGetSingleBlogQuery } = blogsApiSlice;
