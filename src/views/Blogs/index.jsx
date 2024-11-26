@@ -13,7 +13,7 @@ import {
 import Navbar from "../../components/Navbar";
 import { useGetBlogsQuery } from "../../redux/api/blogApiSlice";
 
-const Home = () => {
+const Blogs = () => {
   const { data, isLoading } = useGetBlogsQuery({});
 
   if (isLoading) {
@@ -164,4 +164,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Blogs;
