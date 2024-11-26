@@ -1,12 +1,11 @@
 import React from "react";
-import Button from "@mui/material/Button";
+import RootComponent from "./Router";
 
 const App = () => {
   return (
-    <div>
-      App
-      <Button variant="contained">Hello world</Button>
-    </div>
+    <>
+      <RootComponent />
+    </>
   );
 };
 
