@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "clear && vite",
-    "build": "clear &&  vite build",
+    "build": "vite build",
     "lint": "clear && eslint .",
     "preview": "clear && vite preview"
   },
